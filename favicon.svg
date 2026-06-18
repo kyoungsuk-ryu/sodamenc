@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Rich B2B Gradient matching Sodam E&C Brand Identity -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <!-- Soft shadow for the central emblem to pop -->
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Beautiful rounded container base (perfect for modern tab/mobile icons) -->
+  <rect width="512" height="512" rx="144" fill="url(#brandGradient)" />
+  
+  <!-- Interlocking geometric representation of 'S' and 'E' representing Software & Engineering -->
+  <g filter="url(#glow)">
+    <!-- Upper loop of the 'S' -->
+    <path d="M150 200 C150 140, 202 120, 256 120 C310 120, 362 140, 362 200 C362 260, 220 252, 220 312 C220 372, 272 392, 326 392 C362 392, 350 352, 350 352" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="44" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    <!-- Glowing blue digital tech node representing Security, Connection, and Completion -->
+    <circle cx="326" cy="312" r="30" fill="#60A5FA" stroke="#FFFFFF" stroke-width="8" />
+  </g>
+</svg>
