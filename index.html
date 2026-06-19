@@ -106,9 +106,6 @@
                     <a href="#about" class="nav-link text-sm lg:text-base font-medium text-slate-600 hover:text-[#1E3A8A] transition-colors duration-200">About</a>
                     <a href="#services" class="nav-link text-sm lg:text-base font-medium text-slate-600 hover:text-[#1E3A8A] transition-colors duration-200">Services</a>
                     <a href="#methodology" class="nav-link text-sm lg:text-base font-medium text-slate-600 hover:text-[#1E3A8A] transition-colors duration-200">Methodology</a>
-                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-[#1E3A8A] hover:bg-[#3B82F6] rounded-lg transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none">
-                        Contact
-                    </a>
                 </nav>
 
                 <!-- 모바일 햄버거 버튼 -->
@@ -126,9 +123,6 @@
                 <a href="#about" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-[#1E3A8A] py-2 border-b border-slate-100/50">About</a>
                 <a href="#services" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-[#1E3A8A] py-2 border-b border-slate-100/50">Services</a>
                 <a href="#methodology" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-[#1E3A8A] py-2 border-b border-slate-100/50">Methodology</a>
-                <a href="#contact" class="mobile-nav-link inline-flex items-center justify-center w-full px-5 py-3 text-base font-bold text-white bg-[#1E3A8A] hover:bg-[#3B82F6] rounded-lg transition-all duration-200 mt-4 shadow-md">
-                    Contact
-                </a>
             </div>
         </div>
     </header>
@@ -167,12 +161,6 @@
 
                 <!-- CTA 버튼 모음 -->
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-6 fade-in-up delay-300">
-                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-[#1E3A8A] bg-white hover:bg-slate-100 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-95 group">
-                        <span>프로젝트 문의하기</span>
-                        <svg class="w-5 h-5 ml-2.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </a>
                     <a href="#services" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95">
                         핵심 서비스 보기
                     </a>
@@ -441,105 +429,6 @@
     </section>
 
 
-    <!-- ================= Contact Us Section ================= -->
-    <section id="contact" class="py-24 md:py-32 bg-[#F8FAFC] border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-start">
-                
-                <!-- 좌측: 컨택 정보 안내 -->
-                <div class="lg:col-span-5 space-y-8 fade-in-up">
-                    <div class="space-y-4">
-                        <span class="text-sm font-bold tracking-widest text-[#3B82F6] uppercase">Get in Touch</span>
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-[#0F172A] leading-tight tracking-tight">
-                            비즈니스의 안전한 도약,<br />지금 소담이엔씨와 시작해 보세요.
-                        </h2>
-                        <p class="text-base text-slate-500 font-light pt-2">
-                            아이디어 단계의 가벼운 컨설팅 제안부터 고스펙 기술 진단, 아키텍처 의뢰 및 법률 규제 심사 대응 문의까지 전문 엔지니어가 신속히 검토하여 피드백을 전달드립니다.
-                        </p>
-                    </div>
-
-                    <!-- 연락 수단들 -->
-                    <div class="space-y-6 pt-4">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white border border-slate-100 text-[#1E3A8A] flex items-center justify-center shadow-sm">
-                                <i class="fa-solid fa-envelope text-lg"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wider">이메일 문의</h4>
-                                <a href="mailto:sodam@sodamenc.kr" class="text-base md:text-lg font-bold text-slate-800 hover:text-[#3B82F6] transition-colors duration-200">sodam@sodamenc.kr</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 우측: 입력 폼 -->
-                <div class="lg:col-span-7 bg-white border border-slate-100 p-8 sm:p-12 rounded-3xl shadow-sm fade-in-up delay-100">
-                    <form id="contact-form" class="space-y-6" onsubmit="handleFormSubmit(event)">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <!-- 기업/기관명 -->
-                            <div class="space-y-2">
-                                <label for="form-company" class="text-xs sm:text-sm font-bold text-slate-700 block">기업 / 기관명 *</label>
-                                <input type="text" id="form-company" required class="w-full bg-[#F8FAFC] border border-slate-200 focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 rounded-xl px-4 py-3 text-[#0F172A] text-sm focus:outline-none transition-all duration-200" placeholder="예: (주)소담이엔씨">
-                            </div>
-                            <!-- 담당자명 -->
-                            <div class="space-y-2">
-                                <label for="form-name" class="text-xs sm:text-sm font-bold text-slate-700 block">담당자 성함 *</label>
-                                <input type="text" id="form-name" required class="w-full bg-[#F8FAFC] border border-slate-200 focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 rounded-xl px-4 py-3 text-[#0F172A] text-sm focus:outline-none transition-all duration-200" placeholder="예: 홍길동 팀장">
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <!-- 이메일 주소 -->
-                            <div class="space-y-2">
-                                <label for="form-email" class="text-xs sm:text-sm font-bold text-slate-700 block">이메일 주소 *</label>
-                                <input type="email" id="form-email" required class="w-full bg-[#F8FAFC] border border-slate-200 focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 rounded-xl px-4 py-3 text-[#0F172A] text-sm focus:outline-none transition-all duration-200" placeholder="example@sodamenc.kr">
-                            </div>
-                            <!-- 연락처 -->
-                            <div class="space-y-2">
-                                <label for="form-phone" class="text-xs sm:text-sm font-bold text-slate-700 block">연락처 *</label>
-                                <input type="tel" id="form-phone" required class="w-full bg-[#F8FAFC] border border-slate-200 focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 rounded-xl px-4 py-3 text-[#0F172A] text-sm focus:outline-none transition-all duration-200" placeholder="010-0000-0000">
-                            </div>
-                        </div>
-
-                        <!-- 문의 유형 선택 -->
-                        <div class="space-y-2">
-                            <label for="form-type" class="text-xs sm:text-sm font-bold text-slate-700 block">문의 분야 *</label>
-                            <select id="form-type" required class="w-full bg-[#F8FAFC] border border-slate-200 focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 rounded-xl px-4 py-3 text-[#0F172A] text-sm focus:outline-none transition-all duration-200">
-                                <option value="" disabled selected>선택해 주세요</option>
-                                <option value="dev">IT 소프트웨어 개발 & 아키텍처 구축</option>
-                                <option value="audit">정보시스템 감리 & 보안 진단</option>
-                                <option value="isms">ISMS-P 인증 컨설팅</option>
-                                <option value="etc">기타 제휴 및 일반 문의</option>
-                            </select>
-                        </div>
-
-                        <!-- 상세 내용 -->
-                        <div class="space-y-2">
-                            <label for="form-message" class="text-xs sm:text-sm font-bold text-slate-700 block">상세 문의 내용 *</label>
-                            <textarea id="form-message" required rows="5" class="w-full bg-[#F8FAFC] border border-slate-200 focus:border-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]/20 rounded-xl px-4 py-3 text-[#0F172A] text-sm focus:outline-none transition-all duration-200 resize-none" placeholder="프로젝트 목표, 필요한 기술 범위, 타임라인 등 대략적인 내용을 작성해 주시면 더욱 정확하고 상세한 상담이 가능합니다."></textarea>
-                        </div>
-
-                        <!-- 동의 약관 -->
-                        <div class="flex items-start space-x-3 pt-2">
-                            <input type="checkbox" id="form-agreement" required class="w-4 h-4 mt-1 border-slate-300 rounded text-[#3B82F6] focus:ring-[#3B82F6] focus:ring-offset-0">
-                            <label for="form-agreement" class="text-xs text-slate-500 cursor-pointer select-none">
-                                개인정보 수집 및 이용 동의 (필수) <br />
-                                <span class="text-[11px] text-slate-400">문의 사항 처리 및 원활한 상담 진행을 위해 상기 개인정보를 수집하는 데 동의합니다.</span>
-                            </label>
-                        </div>
-
-                        <!-- 제출 버튼 -->
-                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-4 text-base font-bold text-white bg-[#1E3A8A] hover:bg-[#3B82F6] rounded-xl transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none transform active:scale-[0.98] mt-2">
-                            <span id="submit-text">문의 신청 완료하기</span>
-                            <i id="submit-spinner" class="fa-solid fa-circle-notch fa-spin ml-2.5 hidden"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- ================= Footer (하단) ================= -->
     <footer class="bg-[#0F172A] text-slate-400 py-16 md:py-20 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -612,23 +501,6 @@
     </button>
 
 
-    <!-- ================= 문의 신청 완료 안내 모달 (성공 피드백) ================= -->
-    <div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#0F172A]/60 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300">
-        <div class="bg-white rounded-3xl p-8 max-w-md w-full border border-slate-100 shadow-2xl text-center transform scale-90 transition-transform duration-300" id="success-modal-content">
-            <div class="w-16 h-16 rounded-full bg-green-50 text-green-500 flex items-center justify-center mx-auto mb-6 shadow-inner">
-                <i class="fa-solid fa-check text-2xl"></i>
-            </div>
-            <h3 class="text-xl md:text-2xl font-bold text-[#0F172A] mb-3">상담 문의가 접수되었습니다.</h3>
-            <p class="text-sm text-slate-500 font-normal leading-relaxed mb-8">
-                남겨주신 메일과 연락처로 신속히 답변드리겠습니다. 소담이엔씨를 향한 소중한 관심에 진심으로 감사드립니다.
-            </p>
-            <button onclick="closeModal()" class="w-full inline-flex items-center justify-center px-6 py-3.5 text-sm font-bold text-white bg-[#1E3A8A] hover:bg-[#3B82F6] rounded-xl transition-all duration-200 shadow-md">
-                확인
-            </button>
-        </div>
-    </div>
-
-
     <!-- ================= JavaScript / UI Logic ================= -->
     <script>
         // DOM Elements
@@ -639,8 +511,6 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const hamburgerIcon = document.getElementById('hamburger-icon');
         const scrollTopBtn = document.getElementById('scroll-top-btn');
-        const successModal = document.getElementById('success-modal');
-        const successModalContent = document.getElementById('success-modal-content');
 
         // GNB Scroll Effect
         window.addEventListener('scroll', () => {
@@ -732,42 +602,6 @@
         // 대상 엘리먼트들 옵저버 등록
         const fadeElements = document.querySelectorAll('.fade-in-up');
         fadeElements.forEach(el => observer.observe(el));
-
-        // Form Submit Action (Simulation)
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const submitBtn = event.target.querySelector('button[type="submit"]');
-            const submitText = document.getElementById('submit-text');
-            const submitSpinner = document.getElementById('submit-spinner');
-
-            // 버튼 비활성화 및 스피너 가동
-            submitBtn.disabled = true;
-            submitText.textContent = "접수 중...";
-            submitSpinner.classList.remove('hidden');
-
-            // 비동기 전송 시뮬레이션 (1.5초 후 성공)
-            setTimeout(() => {
-                // 폼 초기화
-                event.target.reset();
-
-                // 버튼 상태 복원
-                submitBtn.disabled = false;
-                submitText.textContent = "문의 신청 완료하기";
-                submitSpinner.classList.add('hidden');
-
-                // 성공 모달 활성화
-                successModal.classList.remove('opacity-0', 'pointer-events-none');
-                successModalContent.classList.remove('scale-90');
-                successModalContent.classList.add('scale-100');
-            }, 1500);
-        }
-
-        // Close Modal Function
-        function closeModal() {
-            successModal.classList.add('opacity-0', 'pointer-events-none');
-            successModalContent.classList.remove('scale-100');
-            successModalContent.classList.add('scale-90');
-        }
     </script>
 </body>
 </html>
