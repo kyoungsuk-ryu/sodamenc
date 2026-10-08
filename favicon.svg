@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- 왼쪽 푸른빛-보라색 그라데이션 -->
+    <linearGradient id="grad-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- 상단 푸른색 그라데이션 -->
+    <linearGradient id="grad-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- 오른쪽 청록-초록색 그라데이션 -->
+    <linearGradient id="grad-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- 하단 푸른빛 그라데이션 -->
+    <linearGradient id="grad-bottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- 꽃잎 기본 형태 (중심 기준 위쪽 방향) -->
+    <path id="petal" d="M250,250 C220,160 215,70 250,20 C285,70 280,160 250,250 Z" />
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- 1번 꽃잎 (상단 - 푸른색 계열) -->
+    <use href="#petal" fill="url(#grad-top)" />
+
+    <!-- 2번 꽃잎 (우상단 - 초록 계열) -->
+    <use href="#petal" transform="rotate(60 250 250)" fill="url(#grad-right)" />
+
+    <!-- 3번 꽃잎 (우하단 - 초록/청록 계열) -->
+    <use href="#petal" transform="rotate(120 250 250)" fill="url(#grad-right)" />
+
+    <!-- 4번 꽃잎 (하단 - 푸른색 계열) -->
+    <use href="#petal" transform="rotate(180 250 250)" fill="url(#grad-bottom)" />
+
+    <!-- 5번 꽃잎 (좌하단 - 보라/파란 계열) -->
+    <use href="#petal" transform="rotate(240 250 250)" fill="url(#grad-left)" />
+
+    <!-- 6번 꽃잎 (좌상단 - 보라 계열) -->
+    <use href="#petal" transform="rotate(300 250 250)" fill="url(#grad-left)" />
+  </g>
+</svg>
